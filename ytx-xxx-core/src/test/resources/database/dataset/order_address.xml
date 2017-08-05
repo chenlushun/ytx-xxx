@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/dataset.xsd">
+    <order_address id="1" country_code="86" country_name="中国" province_code="610000" province_name="陕西省"
+                   city_code="610100" city_name="西安市" area_code="610116" area_name="长安区" town_code="66666"
+                   town_name="某某镇" address="某某地方" zip="23434" email="1223231@sina.com" consignee="李寻欢"/>
+</dataset>

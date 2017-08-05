@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/dataset.xsd">
+    <order_payment_history
+            id="1"
+            purchase_order_id="1"
+            payment_type_id="1"
+            payment_sn="ccc"
+            out_trade_no="889546856"
+            check_status="1"
+            pay_status="2"
+            pay_amount="100"
+            source_serial_no="abc" />
+    <order_payment_history
+            id="2"
+            purchase_order_id="1"
+            payment_type_id="1"
+            payment_sn="asdf"
+            out_trade_no="889546856a"
+            source_serial_no="abcf"
+            check_status="0"
+            pay_amount="2"
+            pay_status="0"
+    />
+    <order_payment_history
+            id="3"
+            purchase_order_id="3"
+            payment_type_id="1"
+            payment_sn="cccasdfasdf"
+            out_trade_no="889546fff856"
+            check_status="0"
+            pay_status="2"
+            pay_amount="100"
+            source_serial_no="abac" />
+</dataset>

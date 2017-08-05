@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/dataset.xsd">
+    <order_item_discount id="1"
+                    purchase_order_serial_number="abc"
+                         order_item_id="1"
+                    />
+</dataset>

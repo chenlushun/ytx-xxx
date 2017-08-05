@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/dataset.xsd">
+    <cart_line id="1" shopping_cart_id="1" user_account_id="1" seller_account_id="1" item_id="1" item_sku_id="100"
+               number="1" price_snapshot="150.00" stock_number_snapshot="100" created_at="2015-08-10 12:12:12"
+               updated_at="2015-08-10 12:12:12"/>
+    <cart_line id="2" shopping_cart_id="1" user_account_id="1" seller_account_id="2" item_id="2" item_sku_id="80"
+               number="2" price_snapshot="80.00" stock_number_snapshot="150" created_at="2015-08-11 11:12:12"
+               updated_at="2015-08-11 11:12:12"/>
+</dataset>

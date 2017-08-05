@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ytx.xxx</groupId>
+    <artifactId>spring-boot-starter-ytx-xxx</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>spring-boot-starter-ytx-xxx</name>
+    <description>Spring Boot Starter for YTX xxx</description>
+
+    <properties>
+        <spring-boot.version>1.4.3.RELEASE</spring-boot.version>
+    </properties>
+
+    <!--<developers>-->
+        <!--<developer>-->
+            <!--<id>linux_china</id>-->
+            <!--<name>Jacky</name>-->
+            <!--<email>jacky@ytx.com</email>-->
+            <!--<roles>-->
+                <!--<role>Developer</role>-->
+            <!--</roles>-->
+        <!--</developer>-->
+    <!--</developers>-->
+
+    <!--<scm>-->
+        <!--<connection>scm:git:ssh://git@git.mvnsearch.org:7777/ytx/ytx-cms.git</connection>-->
+        <!--<developerConnection>scm:git:ssh://git@git.mvnsearch.org:7777/ytx/ytx-cms.git</developerConnection>-->
+        <!--<url>http://git.mvnsearch.org/projects/YTX/repos/ytx-cms/browse</url>-->
+    <!--</scm>-->
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ytx.xxx</groupId>
+            <artifactId>ytx-xxx-common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mvnsearch.spring.boot</groupId>
+            <artifactId>spring-boot-starter-dubbo</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot,not include plugin
+                    management as the parent import style -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <distributionManagement>
+        <repository>
+            <id>ytx-releases</id>
+            <name>Nexus Release Repository</name>
+            <url>http://115.236.173.156:8888/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ytx-snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://115.236.173.156:8888/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

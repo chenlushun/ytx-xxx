@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/dataset.xsd">
+    <shopping_cart id="1" user_account_id="1" cart_line_count="1" item_total_number="1" remark="测试"
+                   created_at="2015-08-10 12:12:12" updated_at="2015-08-10 12:12:12"/>
+</dataset>

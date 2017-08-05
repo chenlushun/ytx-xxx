@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:dflt="ytx_trade">
+	<xsd:import namespace="ytx_trade" schemaLocation="ytx_trade.xsd" />
+	<xsd:element name="dataset">
+		<xsd:complexType>
+			<xsd:choice minOccurs="0" maxOccurs="unbounded">
+				<xsd:element name="file_export_log" type="dflt:file_export_log__type" />
+				<xsd:element name="shopping_cart" type="dflt:shopping_cart__type" />
+				<xsd:element name="order_refund" type="dflt:order_refund__type" />
+				<xsd:element name="dbmaintain_scripts" type="dflt:dbmaintain_scripts__type" />
+				<xsd:element name="purchase_order_active" type="dflt:purchase_order_active__type" />
+				<xsd:element name="order_payment_history" type="dflt:order_payment_history__type" />
+				<xsd:element name="payment_type" type="dflt:payment_type__type" />
+				<xsd:element name="order_item" type="dflt:order_item__type" />
+				<xsd:element name="order_payment" type="dflt:order_payment__type" />
+				<xsd:element name="purchase_order" type="dflt:purchase_order__type" />
+				<xsd:element name="order_discount" type="dflt:order_discount__type" />
+				<xsd:element name="order_item_discount" type="dflt:order_item_discount__type" />
+				<xsd:element name="order_address" type="dflt:order_address__type" />
+				<xsd:element name="sale_order" type="dflt:sale_order__type" />
+				<xsd:element name="cart_line" type="dflt:cart_line__type" />
+				<xsd:element name="order_rebate" type="dflt:order_rebate__type" />
+				<xsd:element name="order_item_rebate" type="dflt:order_item_rebate__type" />
+				<xsd:any namespace="ytx_trade" />
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

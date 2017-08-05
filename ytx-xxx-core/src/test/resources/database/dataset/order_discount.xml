@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/dataset.xsd">
+    <order_discount id="1"
+                    purchase_order_serial_number="abc"
+                    purchase_order_id="1"
+                    promotion_id="1"
+                    promotion_title="满100减20"
+                    discount_amount="100.00"
+                    coupon_code="20 off $100+"
+                    effect_code="1;1;1"/>
+</dataset>

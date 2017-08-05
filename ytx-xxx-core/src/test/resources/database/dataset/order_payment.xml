@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/dataset.xsd">
+    <order_payment id="1" purchase_order_id="1" payment_type_id="1" payment_sn="128780773" total_amount="80.00" paid_amount="80.00" out_trade_no="889546856" source_serial_no="889546856" paid_at="2015-09-12 12:20:34" status="1"  description="一次支付"/>
+    <order_payment id="2" purchase_order_id="2" payment_type_id="2" payment_sn="1287807732" total_amount="80.00" paid_amount="80.00" out_trade_no="432894328" source_serial_no="abc" paid_at="2015-09-12 12:20:34" status="1"  description="一次支付"/>
+    <order_payment id="3" purchase_order_id="3" payment_type_id="2" payment_sn="1242333334" total_amount="80.00" paid_amount="80.00" out_trade_no="4328943289" source_serial_no="ab2c" paid_at="2015-09-12 12:20:34" status="1"  description="一次支付"/>
+    <order_payment id="4" purchase_order_id="6" payment_type_id="2" payment_sn="12423333344" total_amount="80.00" paid_amount="80.00" out_trade_no="4328943289" source_serial_no="ab2c" paid_at="2015-09-12 12:20:34" status="1"  description="一次支付"/>
+    <order_payment id="5" purchase_order_id="7" payment_type_id="1" payment_sn="1242355333344" total_amount="80.00" paid_amount="80.00" out_trade_no="4328943289" source_serial_no="ab2c" paid_at="2015-09-12 12:20:34" status="1"  description="一次支付"/>
+</dataset>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns="ytx_trade" targetNamespace="ytx_trade">
+	<xsd:element name="file_export_log" type="file_export_log__type" />
+	<xsd:element name="shopping_cart" type="shopping_cart__type" />
+	<xsd:element name="order_refund" type="order_refund__type" />
+	<xsd:element name="dbmaintain_scripts" type="dbmaintain_scripts__type" />
+	<xsd:element name="purchase_order_active" type="purchase_order_active__type" />
+	<xsd:element name="order_payment_history" type="order_payment_history__type" />
+	<xsd:element name="payment_type" type="payment_type__type" />
+	<xsd:element name="order_item" type="order_item__type" />
+	<xsd:element name="order_payment" type="order_payment__type" />
+	<xsd:element name="purchase_order" type="purchase_order__type" />
+	<xsd:element name="order_discount" type="order_discount__type" />
+	<xsd:element name="order_item_discount" type="order_item_discount__type" />
+	<xsd:element name="order_address" type="order_address__type" />
+	<xsd:element name="sale_order" type="sale_order__type" />
+	<xsd:element name="cart_line" type="cart_line__type" />
+	<xsd:element name="order_rebate" type="order_rebate__type" />
+	<xsd:element name="order_item_rebate" type="order_item_rebate__type" />
+	<xsd:complexType name="file_export_log__type">
+		<xsd:attribute name="path" use="optional" />
+		<xsd:attribute name="account_id" use="optional" />
+		<xsd:attribute name="query_content" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="create_at" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="shopping_cart__type">
+		<xsd:attribute name="cart_line_count" use="optional" />
+		<xsd:attribute name="user_account_id" use="optional" />
+		<xsd:attribute name="updated_at" use="optional" />
+		<xsd:attribute name="item_total_number" use="optional" />
+		<xsd:attribute name="created_at" use="optional" />
+		<xsd:attribute name="remark" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="order_refund__type">
+		<xsd:attribute name="purchase_serial_number" use="optional" />
+		<xsd:attribute name="total_amount" use="optional" />
+		<xsd:attribute name="out_refund_no" use="optional" />
+		<xsd:attribute name="payment_sn" use="optional" />
+		<xsd:attribute name="dispute_no" use="optional" />
+		<xsd:attribute name="refund_fee" use="optional" />
+		<xsd:attribute name="update_at" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="third_party_refunded_at" use="optional" />
+		<xsd:attribute name="payment_type_id" use="optional" />
+		<xsd:attribute name="create_at" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="dbmaintain_scripts__type">
+		<xsd:attribute name="file_name" use="optional" />
+		<xsd:attribute name="executed_at" use="optional" />
+		<xsd:attribute name="checksum" use="optional" />
+		<xsd:attribute name="file_last_modified_at" use="optional" />
+		<xsd:attribute name="version" use="optional" />
+		<xsd:attribute name="succeeded" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="purchase_order_active__type">
+		<xsd:attribute name="amount" use="optional" />
+		<xsd:attribute name="out_trade_no" use="optional" />
+		<xsd:attribute name="active_type" use="optional" />
+		<xsd:attribute name="name" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="create_at" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="order_payment_history__type">
+		<xsd:attribute name="refund_status" use="optional" />
+		<xsd:attribute name="purchase_order_id" use="optional" />
+		<xsd:attribute name="pay_amount" use="optional" />
+		<xsd:attribute name="source_type" use="optional" />
+		<xsd:attribute name="check_status" use="optional" />
+		<xsd:attribute name="pay_status" use="optional" />
+		<xsd:attribute name="out_trade_no" use="optional" />
+		<xsd:attribute name="payment_sn" use="optional" />
+		<xsd:attribute name="source_serial_no" use="optional" />
+		<xsd:attribute name="update_at" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="payment_type_id" use="optional" />
+		<xsd:attribute name="create_at" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="payment_type__type">
+		<xsd:attribute name="is_active" use="optional" />
+		<xsd:attribute name="name" use="optional" />
+		<xsd:attribute name="description" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="fee_type" use="optional" />
+		<xsd:attribute name="config" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="order_item__type">
+		<xsd:attribute name="original_price" use="optional" />
+		<xsd:attribute name="item_sku_name" use="optional" />
+		<xsd:attribute name="item_code" use="optional" />
+		<xsd:attribute name="customer_service_flag_disable_time" use="optional" />
+		<xsd:attribute name="active_id" use="optional" />
+		<xsd:attribute name="purchase_order_id" use="optional" />
+		<xsd:attribute name="backup_field4" use="optional" />
+		<xsd:attribute name="backup_field3" use="optional" />
+		<xsd:attribute name="backup_field2" use="optional" />
+		<xsd:attribute name="backup_field1" use="optional" />
+		<xsd:attribute name="number" use="optional" />
+		<xsd:attribute name="single_redbag_amount" use="optional" />
+		<xsd:attribute name="redbag_amount" use="optional" />
+		<xsd:attribute name="customer_service_overdue_flag" use="optional" />
+		<xsd:attribute name="item_sku_id" use="optional" />
+		<xsd:attribute name="transaction_fee_percent" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="single_credit_amount" use="optional" />
+		<xsd:attribute name="customer_service_flag" use="optional" />
+		<xsd:attribute name="item_snapshot_id" use="optional" />
+		<xsd:attribute name="brief" use="optional" />
+		<xsd:attribute name="single_unit_price" use="optional" />
+		<xsd:attribute name="last_unit_price" use="optional" />
+		<xsd:attribute name="dispute_state" use="optional" />
+		<xsd:attribute name="refund_status" use="optional" />
+		<xsd:attribute name="comment_state" use="optional" />
+		<xsd:attribute name="confirm_at" use="optional" />
+		<xsd:attribute name="item_id" use="optional" />
+		<xsd:attribute name="credit_amount" use="optional" />
+		<xsd:attribute name="transaction_fee" use="optional" />
+		<xsd:attribute name="item_name" use="optional" />
+		<xsd:attribute name="last_credit_amount" use="optional" />
+		<xsd:attribute name="seller_account_id" use="optional" />
+		<xsd:attribute name="last_redbag_amount" use="optional" />
+		<xsd:attribute name="unit_price" use="optional" />
+		<xsd:attribute name="back_point" use="optional" />
+		<xsd:attribute name="item_image_key" use="optional" />
+		<xsd:attribute name="customer_service_time" use="optional" />
+		<xsd:attribute name="bar_code" use="optional" />
+		<xsd:attribute name="purchase_order_serial_number" use="optional" />
+		<xsd:attribute name="sku_code" use="optional" />
+		<xsd:attribute name="customer_service_overdue_time" use="optional" />
+		<xsd:attribute name="delivery_status" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="order_payment__type">
+		<xsd:attribute name="purchase_order_id" use="optional" />
+		<xsd:attribute name="created_at" use="optional" />
+		<xsd:attribute name="third_party_paid_at" use="optional" />
+		<xsd:attribute name="description" use="optional" />
+		<xsd:attribute name="source_type" use="optional" />
+		<xsd:attribute name="paid_at" use="optional" />
+		<xsd:attribute name="out_trade_no" use="optional" />
+		<xsd:attribute name="total_amount" use="optional" />
+		<xsd:attribute name="payment_sn" use="optional" />
+		<xsd:attribute name="source_serial_no" use="optional" />
+		<xsd:attribute name="paid_amount" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="payment_type_id" use="optional" />
+		<xsd:attribute name="status" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="purchase_order__type">
+		<xsd:attribute name="flag" use="optional" />
+		<xsd:attribute name="discount_amount" use="optional" />
+		<xsd:attribute name="created_at" use="optional" />
+		<xsd:attribute name="remark" use="optional" />
+		<xsd:attribute name="vender" use="optional" />
+		<xsd:attribute name="settlement_time" use="optional" />
+		<xsd:attribute name="backup_field2" use="optional" />
+		<xsd:attribute name="backup_field1" use="optional" />
+		<xsd:attribute name="delivery_fee" use="optional" />
+		<xsd:attribute name="user_account_id" use="optional" />
+		<xsd:attribute name="updated_at" use="optional" />
+		<xsd:attribute name="order_amount" use="optional" />
+		<xsd:attribute name="paid_times" use="optional" />
+		<xsd:attribute name="red_bag_amount" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="credit" use="optional" />
+		<xsd:attribute name="delete_state" use="optional" />
+		<xsd:attribute name="refund_status" use="optional" />
+		<xsd:attribute name="paid_status" use="optional" />
+		<xsd:attribute name="settlement_status" use="optional" />
+		<xsd:attribute name="total_price" use="optional" />
+		<xsd:attribute name="confirm_at" use="optional" />
+		<xsd:attribute name="order_address_id" use="optional" />
+		<xsd:attribute name="credit_amount" use="optional" />
+		<xsd:attribute name="transaction_fee" use="optional" />
+		<xsd:attribute name="third_party_paid_at" use="optional" />
+		<xsd:attribute name="serial_number" use="optional" />
+		<xsd:attribute name="comment_status" use="optional" />
+		<xsd:attribute name="paid_at" use="optional" />
+		<xsd:attribute name="cancel_reason" use="optional" />
+		<xsd:attribute name="order_from" use="optional" />
+		<xsd:attribute name="trade_amount" use="optional" />
+		<xsd:attribute name="comment" use="optional" />
+		<xsd:attribute name="status" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="order_discount__type">
+		<xsd:attribute name="amount" use="optional" />
+		<xsd:attribute name="coupon_code" use="optional" />
+		<xsd:attribute name="promotion_title" use="optional" />
+		<xsd:attribute name="discount_amount" use="optional" />
+		<xsd:attribute name="purchase_order_id" use="optional" />
+		<xsd:attribute name="effect_code" use="optional" />
+		<xsd:attribute name="purchase_order_serial_number" use="optional" />
+		<xsd:attribute name="promotion_id" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="type" use="optional" />
+		<xsd:attribute name="create_at" use="optional" />
+		<xsd:attribute name="value" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="order_item_discount__type">
+		<xsd:attribute name="order_item_id" use="optional" />
+		<xsd:attribute name="amount" use="optional" />
+		<xsd:attribute name="last_value" use="optional" />
+		<xsd:attribute name="single_value" use="optional" />
+		<xsd:attribute name="single_amount" use="optional" />
+		<xsd:attribute name="purchase_order_serial_number" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="type" use="optional" />
+		<xsd:attribute name="create_at" use="optional" />
+		<xsd:attribute name="value" use="optional" />
+		<xsd:attribute name="last_amount" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="order_address__type">
+		<xsd:attribute name="area_name" use="optional" />
+		<xsd:attribute name="zip" use="optional" />
+		<xsd:attribute name="address" use="optional" />
+		<xsd:attribute name="consignee" use="optional" />
+		<xsd:attribute name="area_code" use="optional" />
+		<xsd:attribute name="mobile" use="optional" />
+		<xsd:attribute name="city_code" use="optional" />
+		<xsd:attribute name="province_code" use="optional" />
+		<xsd:attribute name="province_name" use="optional" />
+		<xsd:attribute name="country_code" use="optional" />
+		<xsd:attribute name="city_name" use="optional" />
+		<xsd:attribute name="town_code" use="optional" />
+		<xsd:attribute name="town_name" use="optional" />
+		<xsd:attribute name="phone" use="optional" />
+		<xsd:attribute name="country_name" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="email" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="sale_order__type">
+		<xsd:attribute name="refund_status" use="optional" />
+		<xsd:attribute name="purchase_order_id" use="optional" />
+		<xsd:attribute name="created_at" use="optional" />
+		<xsd:attribute name="serial_number" use="optional" />
+		<xsd:attribute name="remark" use="optional" />
+		<xsd:attribute name="seller_account_id" use="optional" />
+		<xsd:attribute name="is_need_invoice" use="optional" />
+		<xsd:attribute name="seller_sub_type" use="optional" />
+		<xsd:attribute name="updated_at" use="optional" />
+		<xsd:attribute name="order_amount" use="optional" />
+		<xsd:attribute name="seller_type" use="optional" />
+		<xsd:attribute name="invoice_type" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="invoice" use="optional" />
+		<xsd:attribute name="tag" use="optional" />
+		<xsd:attribute name="payment_type_id" use="optional" />
+		<xsd:attribute name="status" use="optional" />
+		<xsd:attribute name="delivery_at" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="cart_line__type">
+		<xsd:attribute name="number" use="optional" />
+		<xsd:attribute name="price_snapshot" use="optional" />
+		<xsd:attribute name="user_account_id" use="optional" />
+		<xsd:attribute name="updated_at" use="optional" />
+		<xsd:attribute name="item_id" use="optional" />
+		<xsd:attribute name="item_sku_id" use="optional" />
+		<xsd:attribute name="stock_number_snapshot" use="optional" />
+		<xsd:attribute name="created_at" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="seller_account_id" use="optional" />
+		<xsd:attribute name="shopping_cart_id" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="order_rebate__type">
+		<xsd:attribute name="amount" use="optional" />
+		<xsd:attribute name="code" use="optional" />
+		<xsd:attribute name="need_dispatched" use="optional" />
+		<xsd:attribute name="purchase_order_serial_number" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="type" use="optional" />
+		<xsd:attribute name="create_at" use="optional" />
+		<xsd:attribute name="value" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="order_item_rebate__type">
+		<xsd:attribute name="order_item_id" use="optional" />
+		<xsd:attribute name="amount" use="optional" />
+		<xsd:attribute name="last_value" use="optional" />
+		<xsd:attribute name="single_value" use="optional" />
+		<xsd:attribute name="single_amount" use="optional" />
+		<xsd:attribute name="purchase_order_serial_number" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="type" use="optional" />
+		<xsd:attribute name="create_at" use="optional" />
+		<xsd:attribute name="value" use="optional" />
+		<xsd:attribute name="last_amount" use="optional" />
+	</xsd:complexType>
+</xsd:schema>
