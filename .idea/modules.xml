@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-ytx-xxx/spring-boot-starter-ytx-xxx.iml" filepath="$PROJECT_DIR$/spring-boot-starter-ytx-xxx/spring-boot-starter-ytx-xxx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ytx-xxx-common/ytx-xxx-common.iml" filepath="$PROJECT_DIR$/ytx-xxx-common/ytx-xxx-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ytx-xxx-core/ytx-xxx-core.iml" filepath="$PROJECT_DIR$/ytx-xxx-core/ytx-xxx-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ytx-xxx-parent.iml" filepath="$PROJECT_DIR$/ytx-xxx-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ytx-xxx-server/ytx-xxx-server.iml" filepath="$PROJECT_DIR$/ytx-xxx-server/ytx-xxx-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ytx-xxx-web/ytx-xxx-web.iml" filepath="$PROJECT_DIR$/ytx-xxx-web/ytx-xxx-web.iml" />
+    </modules>
+  </component>
+</project>

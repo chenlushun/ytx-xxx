@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.mvnsearch.boot:spring-boot-starter-oss:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mvnsearch/boot/spring-boot-starter-oss/1.0.0-SNAPSHOT/spring-boot-starter-oss-1.0.0-20160307.105016-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mvnsearch/boot/spring-boot-starter-oss/1.0.0-SNAPSHOT/spring-boot-starter-oss-1.0.0-20160307.105016-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mvnsearch/boot/spring-boot-starter-oss/1.0.0-SNAPSHOT/spring-boot-starter-oss-1.0.0-20160307.105016-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
